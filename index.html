@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>Patricia Gibellato</title>
+
+  <meta charset="utf-8">
+  <meta name="description" content="My  personal page and portfolio: Communication Design student and artist">
+  <meta name="author" content="Patricia Vanz Gibellato">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--CSS-->
+  <link rel="stylesheet" type="text/css" href="styles/style.css">
+  <!--JS-->
+  <script>
+		function parallax(){
+			// Declarando as var.
+			var layer_1 = document.getElementById('layer_1');
+			var layer_2 = document.getElementById('layer_2');
+			var layer_3 = document.getElementById('layer_3');
+			var layer_4 = document.getElementById('layer_4');
+			// Aplicando a posição
+			layer_1.style.top = -(window.pageYOffset / 3) + 'px';
+			layer_2.style.top = -(window.pageYOffset / 6) + 'px';
+			layer_3.style.top = -(window.pageYOffset / 7) + 'px';
+			layer_4.style.top = -(window.pageYOffset / 7) + 'px';
+		}
+		window.addEventListener("scroll", parallax, false);
+	</script>
+</head>
+
+<body>
+    <section>
+      <div></<div>
+      <div></<div>
+      <div></<div>
+    </section>
+
+
+</body>
+
+
+
+</html>
