@@ -1,6 +1,6 @@
 body {
     margin: 0px;
-    background: url(imgs/background.jpg) fixed;
+    background: url(images/parallax_01.png) fixed;
     width: 100%;
     height: auto;
   }
@@ -14,14 +14,14 @@ body {
     height: 1000px;
   }
   #layer_1 {
-    background: url("styles/images/parallax_01.png") no-repeat 0px 200px;
+    background: url("images/parallax_01.png") no-repeat 0px 200px;
   }
   #layer_2 {
-    background: url("styles/images/parallax_02.png") no-repeat 600px 400px;
+    background: url("images/parallax_02.png") no-repeat 600px 400px;
   }
   #layer_3 {
-    background: url("styles/images/parallax_03.png") no-repeat 700px 10px;
+    background: url("images/parallax_03.png") no-repeat 700px 10px;
   }
   #layer_4 {
-    background: url("styles/images/parallax_04.png") no-repeat -120px 400px;
+    background: url("images/parallax_04.png") no-repeat -120px 400px;
   }
