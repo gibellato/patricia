@@ -97,8 +97,10 @@ a {
   font-style: normal;
   font-weight: 600;
   font-size: 300%;
+  scroll-behavior: smooth;
 
 }
+
 /*--GALERIA--*/
 
 
@@ -355,8 +357,3 @@ a {
             }
 
          }
-@media screen and (prefers-reduced-motion: reduce) {
-	html {
-		scroll-behavior: auto;
-	}
-}
