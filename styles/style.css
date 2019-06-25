@@ -14,12 +14,11 @@ header {
   padding: 0;
 }
 
-.main {
-    margin-top: 40px;
-}
-
 .container {
   position: fixed;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 2000;
+  margin-top: 0;
 }
 
 a {
@@ -89,7 +88,7 @@ a {
 
 
 #drawings {
-  padding-top: 5%;
+  padding-top: 10%;
   padding-bottom: 25px;
   display: block;
   text-align: center;
