@@ -264,7 +264,6 @@ a {
 .close {
   width: 25px;
   height: 25px;
-  background-image: url(styles/images/close.png) no-repeat;
   position: absolute;
   right: 10px;
   top: -125px;
