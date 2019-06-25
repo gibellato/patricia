@@ -217,6 +217,7 @@ a {
 .port h1 {
   padding: 0;
   font-family: houschka-rounded, sans-serif;
+  color: #fbfc40;
   font-style: normal;
   font-weight: 600;
   font-size: 350%;
@@ -227,6 +228,7 @@ a {
   padding-top: 2%;
   font-family: houschka-rounded, sans-serif;
   font-style: normal;
+  color: #888888;
   font-weight: 400;
   font-size: 200%;
   color: rgba(0, 0, 0, 0.4);
@@ -236,6 +238,7 @@ a {
   padding-top: 5%;
   font-family: Proxima Nova, sans-serif;
   font-style: normal;
+  color: #ffffff;
   font-weight: 300;
   font-size: 120%;
 }
