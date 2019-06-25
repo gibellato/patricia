@@ -6,7 +6,6 @@ html, body {
   height: 100%;
   font-family: sans-serif;
   background-color: black;
-  scroll-behavior: smooth;
 }
 
 header {
@@ -344,3 +343,8 @@ a {
             }
 
          }
+@media screen and (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+}
