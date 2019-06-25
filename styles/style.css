@@ -227,7 +227,7 @@ a {
   padding-top: 2%;
   font-family: houschka-rounded, sans-serif;
   font-style: normal;
-  color: #f1f1f1;
+  color: #888888;
   font-weight: 400;
   font-size: 200%;
 }
@@ -236,9 +236,9 @@ a {
   padding-top: 5%;
   font-family: Proxima Nova, sans-serif;
   font-style: normal;
-  color: #ffffff;
+  color: #999999;
   font-weight: 300;
-  font-size: 120%;
+  font-size: 100%;
 }
 
 .port > * {
@@ -262,9 +262,9 @@ a {
 }
 
 .close {
-  width: 21px;
-  height: 21px;
-  background: url(styles/images/close.png) no-repeat;
+  width: 25px;
+  height: 25px;
+  background-image: url(styles/images/close.png) no-repeat;
   position: absolute;
   right: 10px;
   top: -125px;
