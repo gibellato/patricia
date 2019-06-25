@@ -185,7 +185,7 @@ a {
   padding-top: 3%;
   background-color: black;
   z-index: 100;
-  opacity: 0.95;
+  opacity: 0.96;
   visibility: hidden;
   -webkit-transform: translateY(-100%);
   transform: translateY(-100%);
