@@ -264,7 +264,7 @@ a {
   background: url(styles/images/close.png) no-repeat;
   position: absolute;
   right: 10px;
-  top: -121px;
+  top: 10%;
   opacity: 1;
   z-index: 1004;
   -webkit-transition: all 0.1s ease-in-out;
