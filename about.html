@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>Patricia Gibellato</title>
+
+  <meta charset="utf-8">
+  <meta name="description" content="My  personal page and portfolio">
+  <meta name="author" content="Patricia Vanz Gibellato">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Icon-->
+  <link rel="icon" type="image/png" sizes="16x16" href="styles/images/favicon-16x16.png">
+  <!--CSS-->
+  <link rel="stylesheet" type="text/css" href="styleabout.css">
+  <!--Font Adobe Typekit-->
+  <link rel="stylesheet" href="https://use.typekit.net/ndq2czn.css">
+  <!--Font Awesome-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+
+</head>
+    
+<body>
+    
+    <script>
+function changeCSS(cssFile) {
+var oldlink = document.getElementsByTagName("link").item(0);
+var newlink = document.createElement("link");
+newlink.setAttribute("rel", "stylesheet");
+newlink.setAttribute("type", "text/css");
+newlink.setAttribute("href", cssFile);
+document.getElementsByTagName("head").item(0).replaceChild(newlink, oldlink);
+localStorage.setItem("css", cssFile);
+}
+var cssFile = localStorage.getItem("css");
+if (cssFile == null) {
+  changeCSS("style2.css")
+}
+else {
+  changeCSS(cssFile);
+}
+</script>   
+    
+
+    <script>
+    $(document).ready(function() {
+
+    /* Every time the window is scrolled ... */
+    $(window).scroll( function(){
+
+        /* Check the location of each desired element */
+        $('.hideme').each( function(i){
+
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+            /* If the object is completely visible in the window, fade it */
+            if( bottom_of_window > bottom_of_object ){
+
+                $(this).animate({'opacity':'1'},500);
+
+            }
+
+        });
+
+    });
+
+});
+    </script>
+    
+  <header class="container">
+    <section class="wrapper">
+        <div class="top-icons">
+
+          <div class="icons">
+              <a href="BRindex.html" title="PT-BR"><img src="styles/images/brflag.png" class="headerflag"></a>
+              <a href="index.html" title="EN"><img src="styles/images/ukflag.png" class="headerflag"></a>
+          </div>
+           <div class="changestyle">
+              <a><img onclick="changeCSS('style.css');" src="styles/images/dark.png" class="styleicons"></a>
+              <a><img onclick="changeCSS('style.css');" src="styles/images/light.png" class="styleicons"></a>
+          </div>
+      </div>
+      <nav class="menu">
+      <ul class="navigation">
+        <li class="nav-item"><a href="index.html">home</a></li>
+        <li class="nav-item"><a href="#drawings">drawings</a></li>
+        <li class="nav-item"><a href="#wips">work in progress</a></li>
+        <li class="nav-item"><a href="about.html">about me</a></li>
+      </ul>
+    </nav>
+        
+            
+  </section>
+    </header>
+    
+
+    <section class="about-me">
+
+        <div class="inicio">
+        <h2>About my life!</h2>
+          <h3>&darr;</h3>
+        </div>
+
+              <img src="styles/images/Eu_round.png" id="patricia">
+
+    <div class="hideme" id="data">
+            <h4>Patricia Vanz Gibellato</h4>
+            <h5>26 January 1998</h5>
+          </div>
+            <div class="hideme" id="parte1">
+      			<p>I was born in Brazil and lived there until I was 17 years old.
+               I was studying Mechanical Engineering at the time and moved
+               to Italy to continue my studies. I lived in Florence for a year,
+               and today I live in Milan. I rediscovered my passion for drawing
+               and art, and now I'm at my second year of Communication Design
+               at Politecnico di Milano.</p>
+             </div>
+    <div class="hideme" id="parte2">
+      			<h2>Curiosities about me</h2>
+    </div>
+    <div class="hideme">
+            <img src="styles/images/natacao.png" id="natacao">
+          </div>
+    <div class="hideme" id="parte3">
+            <p>I really love sports, and the list of the one's I've practised is
+              quite long: about 6 years of competitive swimming, 8 years of volleyball,
+              2 years of Taekwondo and many others like basketball, athletics, gymnastics,
+              cycling, soccer and futsal. Today I don't have much time, but I've been going to
+              the gym regularly for almost 7 years. My favorite soccer team is São Paulo FC.</p>
+    </div>
+    <div class="hideme">
+            <img src="styles/images/luccacomics.png" id="desenho">
+          </div>
+    <div class="hideme" id="parte4">
+            <p>I always loved drawing, but I hadn't thought about taking it seriously
+              until I was almost 19 years old! I used to draw random things, but then
+              I started to draw the animes I loved when I was a kid, especially
+              Dragon Ball, and just became in love with drawing manga style!</p>
+    </div>
+    <div class="hideme">
+            <img src="styles/images/cannes.png" id="cannes">
+          </div>
+    <div class="hideme" id="parte5">
+            <p>I love cinema, series, and anime. The movies I've watched
+              the most might be the Lord of the Rings trilogy. My favorite series
+              are Breaking Bad and Daredevil! The most nostalgic animes to me are
+              Dragon Ball and Dragon Ball Z. These, along with many others like Pokémon,
+              Digimon and Yu-Gi-Oh!, remind me of happy mornings at my grandmother's house.</p>
+    </div>
+    <div class="hideme">
+            <img src="styles/images/charlesdickens.png" id="dickens">
+          </div>
+          <div class="hideme" id="parte6">
+          <p>I learned how to read by reading a famous children comic in Brazil called
+            "Turma da Mônica", which I love to this day.
+            My favorite authors are Machado de Assis, Jorge Amado, Oscar Wilde,
+            Sir Arthur Conan Doyle and Charles Dickens.
+            I'm also passionate about mangas, and I have a collection with about 14 titles.
+            My favorite one recently is a fairly new one, called "The Promised Neverland".
+          </p>
+        </div>
+          <h2 class="cv"><a href="styles/images/curriculum.pdf" download="curriculum">Download my CV!</a></h2>
+    </section>
+
+</body>
+</html>
