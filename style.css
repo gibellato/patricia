@@ -45,6 +45,25 @@ a {
   transform: scale(1.6) rotate(360deg);
 }
 
+
+.styleicons {
+    min-width: 2%;
+    min-height: 2%;
+    width: 2%;
+    height: 2%;
+    margin-top: 1.5%;
+    margin-left: 2%;
+    box-sizing: border-box;
+    float: left;
+    transition: transform .3s;
+    display: inline-block;
+  }
+
+.styleicons:hover {
+  transform: scale(1.6);
+}
+
+
 .menu ul {
   list-style: none;
   box-sizing: border-box;
@@ -112,7 +131,7 @@ a {
     width: 100%;
     height: 670px;
     padding-top: 80px;
-    background-image: url(images/home.JPG);
+    background-image: url(images/slide1.jpg);
     background-size: cover;
 }
 

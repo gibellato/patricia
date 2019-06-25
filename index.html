@@ -11,8 +11,7 @@
   <!--Icon-->
   <link rel="icon" type="image/png" sizes="16x16" href="styles/images/favicon-16x16.png">
   <!--CSS-->
-  <link rel="stylesheet" type="text/css" href="styles/resetcss.css">
-  <link rel="stylesheet" type="text/css" href="styles/style.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
   <!--Font Adobe Typekit-->
   <link rel="stylesheet" href="https://use.typekit.net/ndq2czn.css">
   <!--Font Awesome-->
@@ -30,6 +29,27 @@
 </head>
     
 <body>
+    
+    <script>
+function changeCSS(cssFile) {
+var oldlink = document.getElementsByTagName("link").item(0);
+var newlink = document.createElement("link");
+newlink.setAttribute("rel", "stylesheet");
+newlink.setAttribute("type", "text/css");
+newlink.setAttribute("href", cssFile);
+document.getElementsByTagName("head").item(0).replaceChild(newlink, oldlink);
+localStorage.setItem("css", cssFile);
+}
+var cssFile = localStorage.getItem("css");
+if (cssFile == null) {
+  changeCSS("style2.css")
+}
+else {
+  changeCSS(cssFile);
+}
+</script>   
+    
+    
   <header class="container">
     <section class="wrapper">
         <div class="top-icons">
@@ -37,6 +57,10 @@
           <div class="icons">
               <a href="BRindex.html" title="PT-BR"><img src="styles/images/brflag.png" class="headerflag"></a>
               <a href="index.html" title="EN"><img src="styles/images/ukflag.png" class="headerflag"></a>
+          </div>
+           <div class="changestyle">
+              <a><img onclick="changeCSS('style.css');" src="styles/images/dark.png" class="styleicons"></a>
+              <a><img onclick="changeCSS('style.css');" src="styles/images/light.png" class="styleicons"></a>
           </div>
       </div>
       <nav class="menu">
@@ -449,5 +473,7 @@
     </section>
       
 <script src="js/myscript.js"></script>
+ 
+    
     </body>
 </html>
