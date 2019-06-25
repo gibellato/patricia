@@ -164,6 +164,7 @@ a {
   left: 50%;
   margin: -14px 0 0 -16px;
   background: url(styles/images/1.png) no-repeat;
+  background-size: 20px 20px;
   content: "";
   opacity: 0;
   z-index: 1;
