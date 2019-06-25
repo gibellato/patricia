@@ -163,10 +163,10 @@ a {
   top: 40%;
   left: 50%;
   margin: -14px 0 0 -16px;
-  background: url(styles/images/1.png) no-repeat;
-  background-size: 20px 20px;
+  background: url(styles/images/open.png) no-repeat;
+  background-size: 21px 21px;
   content: "";
-  opacity: 0;
+  opacity: 1;
   z-index: 1;
   -webkit-transition: all 0.3s linear;
   -moz-transition: all 0.3s linear;
@@ -279,7 +279,8 @@ a {
 .close {
   width: 21px;
   height: 21px;
-  background: url(styles/images/2.png) no-repeat;
+  background: url(styles/images/close.png) no-repeat;
+  background-size: 21px 21px;
   position: absolute;
   right: 10px;
   top: -121px;
