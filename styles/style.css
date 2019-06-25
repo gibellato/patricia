@@ -262,8 +262,6 @@ a {
 }
 
 .close {
-  width: 25px;
-  height: 25px;
   position: absolute;
   right: 10px;
   top: -125px;
@@ -273,6 +271,12 @@ a {
   -moz-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
 }
+
+.close img {
+    width: 25px;
+  height: 25px;
+}
+
 .item_open .close {
   opacity: 1;
   width: 25px;
