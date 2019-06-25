@@ -246,7 +246,7 @@ a {
   height: 100%;
   top: 0;
   left: 0;
-  padding-top: 3%;
+  padding-top: 80px;
   background-color: rgba(0, 0, 0, 0.9);
   z-index: 100;
   visibility: hidden;
@@ -288,7 +288,7 @@ a {
 }
 
 .port h2{
-  padding-top: 2%;
+  padding-top: 1%;
   font-family: houschka-rounded, sans-serif;
   font-style: normal;
   color: #f6f6f6;
@@ -297,7 +297,7 @@ a {
 }
 
 .port p {
-  padding-top: 5%;
+  padding-top: 3%;
   font-family: Proxima Nova, sans-serif;
   font-style: normal;
   color: #888888;
