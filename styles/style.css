@@ -262,7 +262,6 @@ a {
   width: 21px;
   height: 21px;
   background: url(styles/images/close.png) no-repeat;
-  background-size: 21px 21px;
   position: absolute;
   right: 10px;
   top: -121px;
