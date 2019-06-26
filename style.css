@@ -119,18 +119,6 @@ a {
   font-size: 250%;
 }
 
-#wips {
-  padding-top: 119%;
-  padding-bottom: 25px;
-  display: block;
-  text-align: center;
-  color: #fbfc40;
-  font-family: houschka-rounded, sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 250%;
-}
-
 .welcome {
     width: 100%;
     height: 670px;
@@ -405,7 +393,153 @@ footer {
   transition: all 0.3s ease-in-out;
 }
 
+/*--ABOUT--*/
 
+
+
+
+
+
+
+.about-me {
+  display: block;
+  box-sizing: border-box;
+  text-align: center;
+  }
+
+.inicio h2{
+  width: 100%;
+  margin: 0;
+  border: 0;
+  padding-top: 350px;
+  font-family: houschka-rounded, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 300%;
+  color: #fbfc40;
+}
+
+.inicio h3 {
+  font-family: houschka-rounded, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 300%;
+  color: #fbfc40;
+}
+
+.hideme h2{
+  font-family: houschka-rounded, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 300%;
+  color: #fbfc40;
+  margin:0;
+  width: 100%;
+}
+
+.about-me p {
+  font-family: houschka-rounded, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 110%;
+  color: #999999;
+  padding: 0;
+  margin: auto;
+  width: 40%;
+  text-align: center;
+}
+
+
+#patricia {
+  width: 25%;
+  height: 25%;
+  padding-top: 100px;
+  padding-bottom: 10px;
+}
+
+#data {
+  font-family: houschka-rounded, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 100%;
+  padding-bottom: 7px;
+}
+
+#data h4 {
+  padding: 0;
+  margin: 0;
+}
+
+#data h5 {
+  padding: 0;
+  margin: 0;
+}
+
+#parte2 {
+  padding-top: 70px;
+}
+
+#natacao {
+  width: 25%;
+  height: 25%;
+  padding-top: 70px;
+  padding-bottom: 40px;
+}
+
+
+#desenho {
+  width: 25%;
+  height: 25%;
+  padding-top: 70px;
+  padding-bottom: 40px;
+}
+
+
+#cannes {
+  width: 25%;
+  height: 25%;
+  padding-top: 120px;
+  padding-bottom: 40px;
+}
+
+#dickens {
+  width: 25%;
+  height: 25%;
+  padding-top: 55px;
+  padding-bottom: 40px;
+}
+
+#parte6 {
+  padding-bottom: 50px;
+}
+
+.cv {
+  font-family: houschka-rounded, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 150%;
+  text-align: center;
+  padding-bottom: 60px;
+  display: block;
+}
+
+.cv a {
+  text-decoration: none;
+  color: #000000;
+  padding: 15px;
+  background-color: #fbfc40;
+}
+
+.cv a:hover{
+  background-color: rgba(255, 255, 255, 1);
+  color: #000000;
+}
+
+.hideme
+{
+    opacity:0;
+}
 @media screen and (max-width: 610px) {
             .nav-item {
               display: block;
