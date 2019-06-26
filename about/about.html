@@ -9,7 +9,7 @@
   <meta name="author" content="Patricia Vanz Gibellato">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!--Icon-->
-  <link rel="icon" type="image/png" sizes="16x16" href="styles/images/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../styles/images/favicon-16x16.png">
   <!--CSS-->
   <link rel="stylesheet" type="text/css" href="styleabout.css">
   <!--Font Adobe Typekit-->
@@ -54,27 +54,45 @@
     });
 
 });
-    </script>
+    
+function changeCSS(cssFile) {
+var oldlink = document.getElementsByTagName("link").item(0);
+var newlink = document.createElement("link");
+newlink.setAttribute("rel", "stylesheet");
+newlink.setAttribute("type", "text/css");
+newlink.setAttribute("href", cssFile);
+document.getElementsByTagName("head").item(0).replaceChild(newlink, oldlink);
+localStorage.setItem("css", cssFile);
+}
+var cssFile = localStorage.getItem("css");
+if (cssFile == null) {
+  changeCSS("styleabout.css")
+}
+else {
+  changeCSS(cssFile);
+}
+    </script> 
+        
+    
     
   <header class="container">
     <section class="wrapper">
         <div class="top-icons">
 
           <div class="icons">
-              <a href="BRindex.html" title="PT-BR"><img src="styles/images/brflag.png" class="headerflag"></a>
-              <a href="index.html" title="EN"><img src="styles/images/ukflag.png" class="headerflag"></a>
+              <a href="BRindex.html" title="PT-BR"><img src="../styles/images/brflag.png" class="headerflag"></a>
+              <a href="index.html" title="EN"><img src="../styles/images/ukflag.png" class="headerflag"></a>
           </div>
            <div class="changestyle">
-              <img onclick="changeCSS('style.css');" src="styles/images/dark.png" class="styleicons">
-              <img onclick="changeCSS('style2.css');" src="styles/images/light.png" class="styleicons">
-          </div>
+                <a onclick="changeCSS('styleabout.css');"><img src="../styles/images/dark.png" class="styleicons"></a> 
+                <a onclick="changeCSS('styleabout2.css');"><img src="../styles/images/light.png" class="styleicons"></a>
+        </div>
       </div>
       <nav class="menu">
       <ul class="navigation">
-        <li class="nav-item"><a href="index.html">home</a></li>
-        <li class="nav-item"><a href="index.html#drawings">drawings</a></li>
-        <li class="nav-item"><a href="index.html#design">design</a></li>
-        <li class="nav-item"><a href="index.html#wips">work in progress</a></li>
+        <li class="nav-item"><a href="../index.html">home</a></li>
+        <li class="nav-item"><a href="../index.html#drawings">drawings</a></li>
+        <li class="nav-item"><a href="../index.html#wips">work in progress</a></li>
         <li class="nav-item"><a href="about.html">about me</a></li>
       </ul>
     </nav>
@@ -91,7 +109,7 @@
           <h3>&darr;</h3>
         </div>
 
-              <img src="styles/images/Eu_round.png" id="patricia">
+              <img class="hideme" src="../styles/images/Eu_round.png" id="patricia">
 
     <div class="hideme" id="data">
             <h4>Patricia Vanz Gibellato</h4>
@@ -109,7 +127,7 @@
       			<h2>Curiosities about me</h2>
     </div>
     <div class="hideme">
-            <img src="styles/images/natacao.png" id="natacao">
+            <img src="../styles/images/natacao.png" id="natacao">
           </div>
     <div class="hideme" id="parte3">
             <p>I really love sports, and the list of the one's I've practised is
@@ -119,7 +137,7 @@
               the gym regularly for almost 7 years. My favorite soccer team is São Paulo FC.</p>
     </div>
     <div class="hideme">
-            <img src="styles/images/luccacomics.png" id="desenho">
+            <img src="../styles/images/luccacomics.png" id="desenho">
           </div>
     <div class="hideme" id="parte4">
             <p>I always loved drawing, but I hadn't thought about taking it seriously
@@ -128,7 +146,7 @@
               Dragon Ball, and just became in love with drawing manga style!</p>
     </div>
     <div class="hideme">
-            <img src="styles/images/cannes.png" id="cannes">
+            <img src="../styles/images/cannes.png" id="cannes">
           </div>
     <div class="hideme" id="parte5">
             <p>I love cinema, series, and anime. The movies I've watched
@@ -138,7 +156,7 @@
               Digimon and Yu-Gi-Oh!, remind me of happy mornings at my grandmother's house.</p>
     </div>
     <div class="hideme">
-            <img src="styles/images/charlesdickens.png" id="dickens">
+            <img src="../styles/images/charlesdickens.png" id="dickens">
           </div>
           <div class="hideme" id="parte6">
           <p>I learned how to read by reading a famous children comic in Brazil called
@@ -149,47 +167,17 @@
             My favorite one recently is a fairly new one, called "The Promised Neverland".
           </p>
         </div>
-          <h2 class="cv"><a href="styles/images/curriculum.pdf" download="curriculum">Download my CV!</a></h2>
+          <h2 class="cv"><a href="../styles/images/curriculum.pdf" download="curriculum">Download my CV!</a></h2>
     </section>
     
-    <footer>
+   <footer>
     <div class="footer1">
     <h1>Patricia Vanz Gibellato</h1>
     <h2>Communication Design student at Politecnico di Milano.</h2>
+    <h3>Designed by Patricia Gibellato.</h3>
     </div>
-        
-    <div class="footer2">
-    <h1> Quick Links</h1>
-    <ul class="footerlinks">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="index.html#drawings">Drawings</a></li>  
-        <li><a href="index.html#designs">Design</a></li>  
-        <li><a href="index.html#wips">Work in progress</a></li>
-        <li><a href="about.html">About me</a></li> 
-    </ul>
-    </div>
-    <div class="footer2">
-    <h1>Designed by Patricia Gibellato.</h1>
-    </div>
+  
     </footer>
-    <script>
-function changeCSS(cssFile) {
-var oldlink = document.getElementsByTagName("link").item(0);
-var newlink = document.createElement("link");
-newlink.setAttribute("rel", "stylesheet");
-newlink.setAttribute("type", "text/css");
-newlink.setAttribute("href", cssFile);
-document.getElementsByTagName("head").item(0).replaceChild(newlink, oldlink);
-localStorage.setItem("css", cssFile);
-}
-var cssFile = localStorage.getItem("css");
-if (cssFile == null) {
-  changeCSS("style2.css")
-}
-else {
-  changeCSS(cssFile);
-}
-</script>
 
 
 </body>

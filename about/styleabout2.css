@@ -1,0 +1,406 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100%;
+  height: 100%;
+  font-family: sans-serif;
+}
+
+header {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 2000;
+  margin-top: 0;
+  width: 100%;
+  height: 60px;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+.icons {
+    margin-right: 2%;
+}
+
+.headerflag {
+    min-width: 1%;
+    min-height: 1%;
+    margin-left: 1.5%;
+    margin-top: 20px;
+    width: 1.9%;
+    height: 1.9%;
+    box-sizing: border-box;
+    float: right;
+    transition: transform .3s;
+    display: inline-block;
+  }
+
+.headerflag:hover {
+  transform: scale(1.6) rotate(360deg);
+}
+
+
+.styleicons {
+    min-width: 2%;
+    min-height: 2%;
+    width: 0.6%;
+    height: 0.6%;
+    margin-top: 16px;
+    margin-left: 2%;
+    box-sizing: border-box;
+    float: left;
+    transition: transform .3s;
+    display: inline-block;
+  }
+
+.styleicons:hover {
+  transform: scale(1.6);
+}
+
+
+.menu ul {
+  list-style: none;
+  box-sizing: border-box;
+  text-align: center;
+  margin: 0;
+  padding-left: 13%;
+}
+
+.nav-item {
+  display: inline-block;
+  font-family: houschka-rounded, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 100%;
+  padding: 18px 25px 18px 25px;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: black;
+  padding: 15px;
+}
+
+.nav-item a:hover {
+  color: #00bab8;
+}
+.menu li {
+  transition: transform .2s;
+}
+.menu li:hover {
+  transform: scale(1.2);
+}
+
+.menu {
+  width: 100%;
+}
+
+
+footer {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+
+.footer1 {
+  box-sizing: border-box;
+  text-align: left;
+  margin: 0; 
+  float: left;
+  padding-left: 1%;
+  font-family: houschka-rounded, sans-serif;
+  font-style: normal;
+  color: black;
+}
+
+.footer1 h1{
+    margin-top: 5px;
+    font-weight: 600;
+    font-size: 70%;
+}
+.footer1 h2{
+    margin: 0;
+    font-weight: 300;
+    font-size: 65%;
+}
+.footer1 h3{
+    margin: 0;
+    font-weight: 200;
+    font-size: 55%;
+    margin-bottom: 10px;
+}
+
+footer {
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: #00bab8;
+    }
+
+
+
+
+
+
+/*--TERMINA O HEADER--*/
+
+
+.about-me {
+  display: block;
+  box-sizing: border-box;
+  text-align: center;
+  }
+
+.inicio h2{
+  width: 100%;
+  margin: 0;
+  border: 0;
+  padding-top: 220px;
+  font-family: houschka-rounded, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 300%;
+  color: #00bab8;
+}
+
+.inicio h3 {
+  font-family: houschka-rounded, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 300%;
+  color: #00bab8;
+}
+
+.hideme h2{
+  font-family: houschka-rounded, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 300%;
+  color: #00bab8;
+  margin:0;
+  width: 100%;
+}
+
+.about-me p {
+  font-family: houschka-rounded, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 110%;
+  color: #222222;
+  padding: 0;
+  margin: auto;
+  width: 40%;
+  text-align: center;
+}
+
+
+#patricia {
+  width: 25%;
+  height: 25%;
+  padding-top: 50px;
+  padding-bottom: 10px;
+}
+
+#data {
+  font-family: houschka-rounded, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #222222;
+  font-size: 100%;
+  padding-bottom: 7px;
+}
+
+#data h4 {
+  padding: 0;
+  margin: 0;
+}
+
+#data h5 {
+  padding: 0;
+  margin: 0;
+}
+
+#parte2 {
+  padding-top: 70px;
+}
+
+#natacao {
+  width: 25%;
+  height: 25%;
+  padding-top: 70px;
+  padding-bottom: 40px;
+}
+
+
+#desenho {
+  width: 25%;
+  height: 25%;
+  padding-top: 70px;
+  padding-bottom: 40px;
+}
+
+
+#cannes {
+  width: 25%;
+  height: 25%;
+  padding-top: 120px;
+  padding-bottom: 40px;
+}
+
+#dickens {
+  width: 25%;
+  height: 25%;
+  padding-top: 55px;
+  padding-bottom: 40px;
+}
+
+#parte6 {
+  padding-bottom: 50px;
+}
+
+.cv {
+  font-family: houschka-rounded, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 150%;
+  text-align: center;
+  padding-bottom: 60px;
+  display: block;
+}
+
+.cv a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 15px;
+  background-color: #00bab8;
+}
+
+.cv a:hover{
+  background-color: #000000;
+  color: #00bab8;
+}
+
+
+
+.hideme
+{
+    opacity:0;
+}
+
+
+@media screen and (max-width: 610px) {
+            .menu {
+              width: 100%;
+            }
+            .menu ul{
+              margin: 0;
+              padding: 0;
+              text-align: center;
+              margin-right: 5%;
+            }
+            .nav-item {
+              width: 100%;
+              display: inline-block;
+              text-align: center;
+              padding: 10px;
+            }
+            .navigation a {
+              margin-left: 0;
+              padding: 0;
+            }
+
+            .headerflag {
+              width: 7%;
+              height: 7%;
+            }
+            .headericon {
+              width: 5%;
+              height: 5%;
+            }
+            #patricia {
+              width: 50%;
+              height: 50%;
+            }
+            #natacao {
+              width: 50%;
+              height: 50%;
+            }
+            #desenho {
+              width: 50%;
+              height: 50%;
+            }
+            #dickens {
+              width: 50%;
+              height: 50%;
+            }
+            #cannes {
+              width: 50%;
+              height: 50%;
+            }
+            .inicio h2{
+              width: 50%;
+              margin: auto;
+              border: 0;
+              padding-top: 50px;
+              font-family: houschka-rounded, sans-serif;
+              font-style: normal;
+              font-weight: 600;
+              font-size: 100%;
+              color: #ff7ebb;
+            }
+
+            .inicio h3 {
+              font-family: houschka-rounded, sans-serif;
+              font-style: normal;
+              font-weight: 600;
+              font-size: 400%;
+              color: #ff7ebb;
+              margin: auto;
+              width: 50%;
+            }
+
+            .hideme h2{
+              font-family: houschka-rounded, sans-serif;
+              font-style: normal;
+              font-weight: 600;
+              font-size: 100%;
+              color: #ff7ebb;
+              margin:auto;
+              width: 50%;
+            }
+            .about-me p {
+              font-family: houschka-rounded, sans-serif;
+              font-style: normal;
+              font-weight: 400;
+              font-size: 90%;
+              color: #000000;
+              padding: 0;
+              margin: auto;
+              width: 60%;
+              text-align: center;
+            }
+            .cv {
+              width: 50%;
+              margin: auto;
+                font-family: houschka-rounded, sans-serif;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 100%;
+                text-align: center;
+                padding-bottom: 60px;
+              }
+              .about-me {
+                height: auto;
+              }
+            }
+          }

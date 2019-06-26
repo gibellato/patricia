@@ -8,8 +8,6 @@
   <meta name="description" content="My  personal page and portfolio">
   <meta name="author" content="Patricia Vanz Gibellato">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!--Icon-->
-  <link rel="icon" type="image/png" sizes="16x16" href="styles/images/favicon-16x16.png">
   <!--CSS-->
   <link rel="stylesheet" type="text/css" href="style.css">
   <!--Font Adobe Typekit-->
@@ -31,7 +29,7 @@
 
     <script>
     
-    function changeCSS(cssFile) {
+function changeCSS(cssFile) {
 var oldlink = document.getElementsByTagName("link").item(0);
 var newlink = document.createElement("link");
 newlink.setAttribute("rel", "stylesheet");
@@ -47,9 +45,9 @@ if (cssFile == null) {
 else {
   changeCSS(cssFile);
 }
-    
-    
     </script>
+    
+    
   <header class="container">
     <section class="wrapper">
         <div class="top-icons">
@@ -58,17 +56,16 @@ else {
               <a href="index.html" title="EN"><img src="styles/images/ukflag.png" class="headerflag"></a>
           </div>
            <div class="changestyle">
-              <a><img onclick="changeCSS('style.css');" src="styles/images/dark.png" class="styleicons"></a>
-              <a><img onclick="changeCSS('style2.css');" src="styles/images/light.png" class="styleicons"></a>
-          </div>
+               <a onclick="changeCSS('style.css');"><img src="styles/images/dark.png" class="styleicons"></a> 
+                <a onclick="changeCSS('style2.css');"><img src="styles/images/light.png" class="styleicons"></a>
+        </div>
       </div>
       <nav class="menu">
       <ul class="navigation">
         <li class="nav-item"><a href="index.html">home</a></li>
         <li class="nav-item"><a href="#drawings">drawings</a></li>
-        <li class="nav-item"><a href="#design">design</a></li>
         <li class="nav-item"><a href="#wips">work in progress</a></li>
-        <li class="nav-item"><a href="about.html">about me</a></li>
+        <li class="nav-item"><a href="about/about.html">about me</a></li>
       </ul>
     </nav>
 
@@ -442,17 +439,19 @@ else {
 
   </div>
 
-</section>
-
 
       <h1 id="wips">Work in progress</h1>
-<section class="gallery" id="top">
 	<div class="row">
 		<ul>
-			<a href="#" class="close"><img src="styles/images/close.png"></a>
 			<li>
 				<a class="image" href="#sarada">
 					<img src="styles/images/Sarada.png" alt="Sarada">
+				</a>
+			</li>
+            
+            <li>
+				<a class="image" href="#nell">
+					<img src="styles/images/nell3.png" alt="Nell">
 				</a>
 			</li>
             	</ul>
@@ -472,7 +471,7 @@ else {
 		</div>
 
      <!-- Imagem 02 - Nel -->
-	<div id="nel" class="port">
+	<div id="nell" class="port">
 
 		<div class="row" id="portimg">
 			<div class="description">
@@ -485,6 +484,16 @@ else {
 			</div>
 		</div>
     </section>
+    
+    
+        <footer>
+    <div class="footer1">
+    <h1>Patricia Vanz Gibellato</h1>
+    <h2>Communication Design student at Politecnico di Milano.</h2>
+    <h3>Designed by Patricia Gibellato.</h3>
+    </div>
+  
+    </footer>
 
 <script>
 // Galeria
@@ -504,8 +513,7 @@ else {
          scrollTop: parseInt($("#top").offset().top)
      }, 400);
  });
-    
-    
+
     </script>
     
 

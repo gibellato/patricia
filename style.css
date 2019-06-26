@@ -120,7 +120,7 @@ a {
 }
 
 #wips {
-  padding-top: 80px;
+  padding-top: 119%;
   padding-bottom: 25px;
   display: block;
   text-align: center;
@@ -162,6 +162,51 @@ a {
   font-weight: 200;
   font-size: 100%;
 }
+
+footer {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+
+.footer1 {
+  box-sizing: border-box;
+  text-align: left;
+  margin: 0; 
+  float: left;
+  padding-left: 1%;
+  font-family: houschka-rounded, sans-serif;
+  font-style: normal;
+  color: white;
+}
+
+.footer1 h1{
+    margin-top: 5px;
+    font-weight: 600;
+    font-size: 70%;
+}
+.footer1 h2{
+    margin: 0;
+    font-weight: 300;
+    font-size: 65%;
+}
+.footer1 h3{
+    margin: 0;
+    font-weight: 200;
+    font-size: 55%;
+    margin-bottom: 10px;
+}
+
+footer {
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: #fbfc40;
+    }
+
+
+
 
 /*--GALERIA--*/
 
@@ -285,6 +330,7 @@ a {
 }
 .port h1 {
   padding: 0;
+  margin: 0;
   font-family: houschka-rounded, sans-serif;
   color: #fbfc40;
   font-style: normal;
@@ -295,6 +341,7 @@ a {
 
 .port h2{
   padding-top: 1%;
+  margin: 0;
   font-family: houschka-rounded, sans-serif;
   font-style: normal;
   color: #f6f6f6;
@@ -304,6 +351,7 @@ a {
 
 .port p {
   padding-top: 3%;
+  margin: 0;
   font-family: Proxima Nova, sans-serif;
   font-style: normal;
   color: #888888;
@@ -356,6 +404,7 @@ a {
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
+
 
 @media screen and (max-width: 610px) {
             .nav-item {
@@ -417,5 +466,4 @@ a {
               text-align: center;
               display: block;
             }
-
          }
