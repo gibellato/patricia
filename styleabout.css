@@ -121,24 +121,24 @@ a {
   font-family: houschka-rounded, sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 400%;
-  color: #ff7ebb;
+  font-size: 300%;
+  color: #fbfc40;
 }
 
 .inicio h3 {
   font-family: houschka-rounded, sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 400%;
-  color: #ff7ebb;
+  font-size: 300%;
+  color: #fbfc40;
 }
 
 .hideme h2{
   font-family: houschka-rounded, sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 400%;
-  color: #ff7ebb;
+  font-size: 300%;
+  color: #fbfc40;
   margin:0;
   width: 100%;
 }
@@ -148,7 +148,7 @@ a {
   font-style: normal;
   font-weight: 400;
   font-size: 110%;
-  color: #000000;
+  color: #999999;
   padding: 0;
   margin: auto;
   width: 40%;
@@ -227,18 +227,26 @@ a {
   font-size: 150%;
   text-align: center;
   padding-bottom: 60px;
+  display: block;
 }
 
 .cv a {
   text-decoration: none;
-  color: #ffffff;
+  color: #000000;
   padding: 15px;
-  background-color: #ff7ebb;
+  background-color: #fbfc40;
 }
 
 .cv a:hover{
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(255, 255, 255, 1);
+  text-decoration-color: #000000;
 }
+
+.cv:hover {
+    transform: scale(1.2);
+    transition-duration: 0.2s;
+}
+
 
 .hideme
 {
@@ -246,6 +254,11 @@ a {
 }
 
 
+footer {
+    background-color: #fbfc40;
+    margin: 0;
+    padding: 0;
+}
 
 @media screen and (max-width: 610px) {
             .menu {
