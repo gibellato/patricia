@@ -8,8 +8,6 @@
   <meta name="description" content="My  personal page and portfolio">
   <meta name="author" content="Patricia Vanz Gibellato">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!--Icon-->
-  <link rel="icon" type="image/png" sizes="16x16" href="styles/images/favicon-16x16.png">
   <!--CSS-->
   <link rel="stylesheet" type="text/css" href="style.css">
   <!--Font Adobe Typekit-->
@@ -26,35 +24,10 @@
 
 
 </head>
-    
+
 <body>
 
-
     <script>
-    $(document).ready(function() {
-
-    /* Every time the window is scrolled ... */
-    $(window).scroll( function(){
-
-        /* Check the location of each desired element */
-        $('.hideme').each( function(i){
-
-            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
-            var bottom_of_window = $(window).scrollTop() + $(window).height();
-
-            /* If the object is completely visible in the window, fade it */
-            if( bottom_of_window > bottom_of_object ){
-
-                $(this).animate({'opacity':'1'},500);
-
-            }
-
-        });
-
-    });
-
-});
-    
     
 function changeCSS(cssFile) {
 var oldlink = document.getElementsByTagName("link").item(0);
@@ -72,35 +45,33 @@ if (cssFile == null) {
 else {
   changeCSS(cssFile);
 }
-    </script> 
-        
+    </script>
     
     
   <header class="container">
     <section class="wrapper">
         <div class="top-icons">
-
           <div class="icons">
               <a href="BRindex.html" title="PT-BR"><img src="styles/images/brflag.png" class="headerflag"></a>
               <a href="index.html" title="EN"><img src="styles/images/ukflag.png" class="headerflag"></a>
           </div>
            <div class="changestyle">
-                <a onclick="changeCSS('style.css');"><img src="styles/images/dark.png" class="styleicons"></a> 
-                <a onclick="changeCSS('style2.css');"><img src="styles/images/light.png" class="styleicons"></a>
+               <a onclick="changeCSS('style2.css');"><img src="styles/images/light.png" class="styleicons"></a> 
+                <a onclick="changeCSS('style.css');"><img src="styles/images/dark.png" class="styleicons"></a>
         </div>
       </div>
       <nav class="menu">
       <ul class="navigation">
         <li class="nav-item"><a href="index.html">home</a></li>
-        <li class="nav-item"><a href="index.html#drawings">drawings</a></li>
+          <li class="nav-item"><a href="index.html#drawings">drawings</a></li>
         <li class="nav-item"><a href="about.html">about me</a></li>
       </ul>
     </nav>
-        
-            
+
+
   </section>
     </header>
-    
+
 
     <section class="about-me">
 
@@ -179,6 +150,31 @@ else {
   
     </footer>
 
+   <script>     
+        
+         $(document).ready(function() {
 
+    /* Every time the window is scrolled ... */
+    $(window).scroll( function(){
+
+        /* Check the location of each desired element */
+        $('.hideme').each( function(i){
+
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+            /* If the object is completely visible in the window, fade it */
+            if( bottom_of_window > bottom_of_object ){
+
+                $(this).animate({'opacity':'1'},500);
+
+            }
+
+        });
+
+    });
+
+});
+    </script>
 </body>
 </html>
