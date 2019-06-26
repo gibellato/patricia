@@ -5,6 +5,7 @@ html, body {
   min-height: 100%;
   height: 100%;
   font-family: sans-serif;
+  background-color: black;
 }
 
 header {
@@ -15,7 +16,7 @@ header {
 
 .container {
   position: fixed;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(0, 0, 0, 0.6);
   z-index: 2000;
   margin-top: 0;
   width: 100%;
@@ -25,7 +26,6 @@ header {
 a {
   text-decoration: none;
 }
-
 
 
 .styleicons {
@@ -65,12 +65,12 @@ a {
 
 .navigation a {
   text-decoration: none;
-  color: black;
+  color: white;
   padding: 15px;
 }
 
 .nav-item a:hover {
-  color: #00bab8;
+  color: #fbfc40;
 }
 .menu li {
   transition: transform .2s;
@@ -90,7 +90,7 @@ a {
   padding-bottom: 25px;
   display: block;
   text-align: center;
-  color: #00bab8;
+  color: #fbfc40;
   font-family: houschka-rounded, sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -101,7 +101,7 @@ a {
     width: 100%;
     height: 670px;
     padding-top: 60px;
-    background-image: url(styles/images/cover2.png);
+    background-image: url(styles/images/cover.png);
     background-size: cover;
 }
 
@@ -110,7 +110,7 @@ a {
   margin-bottom: 0;
   display: block;
   text-align: center;
-  color: black;
+  color: #ffffff;
   font-family: houschka-rounded, sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -122,7 +122,7 @@ a {
   padding: 0;
   margin: 0;
   text-align: center;
-  color: black;
+  color: #ffffff;
   font-family: Proxima Nova, sans-serif;
   font-style: normal;
   font-weight: 200;
@@ -130,7 +130,7 @@ a {
 }
 
 footer {
-    background-color: white;
+    background-color: black;
     margin: 0;
     padding: 0;
     width: 100%;
@@ -145,7 +145,7 @@ footer {
   padding-left: 1%;
   font-family: houschka-rounded, sans-serif;
   font-style: normal;
-  color: black;
+  color: white;
 }
 
 .footer1 h1{
@@ -168,10 +168,8 @@ footer {
 footer {
     border-top-style: solid;
     border-top-width: 1px;
-    border-top-color: #00bab8;
+    border-top-color: #fbfc40;
     }
-
-
 
 
 /*--GALERIA--*/
@@ -264,7 +262,7 @@ footer {
   top: 0;
   left: 0;
   padding-top: 80px;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(0, 0, 0, 0.9);
   z-index: 100;
   visibility: hidden;
   -webkit-transform: translateY(-100%);
@@ -298,7 +296,7 @@ footer {
   padding: 0;
   margin: 0;
   font-family: houschka-rounded, sans-serif;
-  color: #00bab8;
+  color: #fbfc40;
   font-style: normal;
   font-weight: 600;
   font-size: 350%;
@@ -310,7 +308,7 @@ footer {
   margin: 0;
   font-family: houschka-rounded, sans-serif;
   font-style: normal;
-  color: #000000;
+  color: #f6f6f6;
   font-weight: 400;
   font-size: 200%;
 }
@@ -320,7 +318,7 @@ footer {
   margin: 0;
   font-family: Proxima Nova, sans-serif;
   font-style: normal;
-  color: #111111;
+  color: #888888;
   font-weight: 300;
   font-size: 90%;
 }
@@ -345,7 +343,7 @@ footer {
   transition-delay: 0.5s;
 }
 
-.close {
+.close {    
   position: absolute;
   right: 10px;
   top: -125px;
@@ -371,8 +369,12 @@ footer {
   transition: all 0.3s ease-in-out;
 }
 
-
 /*--ABOUT--*/
+
+
+
+
+
 
 
 .about-me {
@@ -385,12 +387,12 @@ footer {
   width: 100%;
   margin: 0;
   border: 0;
-  padding-top: 220px;
+  padding-top: 350px;
   font-family: houschka-rounded, sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 300%;
-  color: #00bab8;
+  color: #fbfc40;
 }
 
 .inicio h3 {
@@ -398,7 +400,7 @@ footer {
   font-style: normal;
   font-weight: 600;
   font-size: 300%;
-  color: #00bab8;
+  color: #fbfc40;
 }
 
 .hideme h2{
@@ -406,7 +408,7 @@ footer {
   font-style: normal;
   font-weight: 600;
   font-size: 300%;
-  color: #00bab8;
+  color: #fbfc40;
   margin:0;
   width: 100%;
 }
@@ -416,7 +418,7 @@ footer {
   font-style: normal;
   font-weight: 400;
   font-size: 110%;
-  color: #222222;
+  color: #999999;
   padding: 0;
   margin: auto;
   width: 40%;
@@ -427,7 +429,7 @@ footer {
 #patricia {
   width: 25%;
   height: 25%;
-  padding-top: 50px;
+  padding-top: 100px;
   padding-bottom: 10px;
 }
 
@@ -435,7 +437,7 @@ footer {
   font-family: houschka-rounded, sans-serif;
   font-style: normal;
   font-weight: 400;
-  color: #222222;
+  color: rgba(0, 0, 0, 0.5);
   font-size: 100%;
   padding-bottom: 7px;
 }
@@ -500,24 +502,20 @@ footer {
 
 .cv a {
   text-decoration: none;
-  color: #ffffff;
+  color: #000000;
   padding: 15px;
-  background-color: #00bab8;
+  background-color: #fbfc40;
 }
 
 .cv a:hover{
-  background-color: #000000;
-  color: #00bab8;
+  background-color: rgba(255, 255, 255, 1);
+  color: #000000;
 }
-
-
 
 .hideme
 {
     opacity:0;
 }
-
-
 @media screen and (max-width: 610px) {
             .nav-item {
               display: block;
@@ -578,5 +576,4 @@ footer {
               text-align: center;
               display: block;
             }
-
          }
