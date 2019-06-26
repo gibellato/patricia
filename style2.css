@@ -27,27 +27,6 @@ a {
 }
 
 
-.icons {
-    margin-right: 2%;
-}
-
-.headerflag {
-    min-width: 1%;
-    min-height: 1%;
-    margin-left: 1.5%;
-    margin-top: 20px;
-    width: 1.9%;
-    height: 1.9%;
-    box-sizing: border-box;
-    float: right;
-    transition: transform .3s;
-    display: inline-block;
-  }
-
-.headerflag:hover {
-  transform: scale(1.6) rotate(360deg);
-}
-
 
 .styleicons {
     min-width: 2%;
@@ -72,7 +51,7 @@ a {
   box-sizing: border-box;
   text-align: center;
   margin: 0;
-  padding-left: 13%;
+  float: right;
 }
 
 .nav-item {
